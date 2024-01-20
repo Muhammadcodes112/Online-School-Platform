@@ -59,6 +59,17 @@ body {
 }
 
 
+/* animate */
+.animate:nth-of-type(even){
+    transform: translateX(-400%);
+}
+.animate.show{
+    transform: translateX(0);
+}
+.animate{
+    transform: translateX(400%);
+    transition: transform 1.4s ease;
+}
 /* loader */
 #loader{
     margin-top: 200px;
