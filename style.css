@@ -104,7 +104,7 @@ body {
 
 /* HEADER  */
 header{
-    width: 98%;
+    width: 95%;
     border-radius: 10px;
     height: 90px;
     margin-top: 10px;
@@ -627,13 +627,16 @@ footer .content .down{
     .nav-bar{
         height: 0;
         position: absolute;
-        top: 60px;
+        top: 90px;
         left: 0;
         right: 0;
-        width: 100vw;
-        background: #222222;
+        width: 95vw;
+        background: var(--second-bg-color);
         transition: 0.5s;
+        margin-left: auto;
+        margin-right: auto;
         overflow: hidden;
+        border-radius: 10px;
     }
     .nav-bar.active{
         height: 300px;
