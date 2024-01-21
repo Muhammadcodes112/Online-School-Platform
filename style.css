@@ -104,7 +104,7 @@ body {
 
 /* HEADER  */
 header{
-    width: 95%;
+    width: 98%;
     border-radius: 10px;
     height: 90px;
     margin-top: 10px;
@@ -474,6 +474,9 @@ footer .content .down{
 
 @media only screen and (max-width: 1000px){
     @media only screen and (max-width: 1320px) {
+        header{
+            width: 95%;
+        }
         h1{
             font-size: 3rem;
             line-height: 50px;
