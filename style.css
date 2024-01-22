@@ -58,16 +58,30 @@ body {
     background-color: var(--bg-color);
     transition: .5s ease;
 }
-.dark-mode{
+/* .dark-mode{
     background-color: #fff;
     color: #132d46;
 }
 .home-darkmode{
     background-color: #fff;
 
-}
+} */
 
 
+.dark-mode {
+    /* background-color: #132d46; */
+    color: #fff;
+  }
+  
+  .home-darkmode {
+    background-color: #6d6a6a;
+    color: #132d46;
+  }
+  
+  #home {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
 
 
 /* animate */
@@ -126,6 +140,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
+    position: fixed;
 }
 .logo{
     font-size: 28px;

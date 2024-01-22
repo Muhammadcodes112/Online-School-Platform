@@ -56,16 +56,35 @@ const boxes = document.querySelectorAll('.animate')
 
 
 
-// Darkmode
-  // darkmode Feature
+// // Darkmode
+//   // darkmode Feature
+//   const darkModeToggle = document.getElementById('darkmode');
+//   const body = document.body;
+//   const wrapper = document.getElementById('home');
+  
+//   darkModeToggle.addEventListener('click', function () {
+//       // Toggle dark mode styles on body and wrapper
+//       body.classList.toggle('dark-mode');
+//       wrapper.classList.toggle('home-darkmode');
+  
+//       // Save dark mode preference (optional, can be stored in localStorage)
+//       const isDarkModeEnabled = body.classList.contains('dark-mode');})
+
+
+
+
+  // Dark mode toggle
   const darkModeToggle = document.getElementById('darkmode');
   const body = document.body;
   const wrapper = document.getElementById('home');
-  
+
   darkModeToggle.addEventListener('click', function () {
-      // Toggle dark mode styles on body and wrapper
-      body.classList.toggle('dark-mode');
-      wrapper.classList.toggle('home-darkmode');
-  
-      // Save dark mode preference (optional, can be stored in localStorage)
-      const isDarkModeEnabled = body.classList.contains('dark-mode');})
+    // Toggle dark mode styles on body and wrapper
+    body.classList.toggle('dark-mode');
+    wrapper.classList.toggle('home-darkmode');
+
+    // Toggle background color of home section
+    const isDarkModeEnabled = body.classList.contains('dark-mode');
+    // const homepage = wrapper.classList.contains('home-darkmode');
+    wrapper.style.backgroundColor = isDarkModeEnabled ? '#6d6a6a' : ''; // Set the background color to white if dark mode is enabled
+  });
