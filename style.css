@@ -57,6 +57,7 @@ body {
     color: #ffffff;
     background-color: var(--bg-color);
     transition: .5s ease;
+    overflow-x: hidden;
 }
 /* .dark-mode{
     background-color: #fff;
@@ -73,8 +74,8 @@ body {
     color: #fff;
   }
   
-  .home-darkmode {
-    background-color: #6d6a6a;
+  .home.darkmode {
+    background-color: #fff;
     color: #132d46;
   }
   
@@ -140,8 +141,32 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
-    position: fixed;
+    z-index: 1;
+    position: relative;
+    transition: top 0.3s ease-in-out;
 }
+header.fixed{
+    position: fixed;
+    width: 98%;
+    /* top: 0; */
+    /* right: 3; */
+    animation: fadeInDown 0.5s;
+    margin-left: 12px;
+    margin-right: auto;
+    border: 1px solid #01C38D;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .logo{
     font-size: 28px;
     font-weight: bold;
@@ -503,6 +528,14 @@ footer .content .down{
         header{
             width: 95%;
         }
+        header.fixed{
+            position: fixed;
+            width: 95%;
+            animation: fadeInDown 0.5s;
+            margin-left: 10px;
+            margin-right: auto;
+            border: 1px solid #01C38D;
+        }
         h1{
             font-size: 3rem;
             line-height: 50px;
@@ -623,6 +656,14 @@ footer .content .down{
 @media only screen and (max-width: 1100px) {
     header{
         padding: 0 30px;
+    }
+    header.fixed{
+        position: fixed;
+        width: 97.5%;
+        animation: fadeInDown 0.5s;
+        margin-left: 10px;
+        margin-right: auto;
+        border: 1px solid #01C38D;
     }
     
 }

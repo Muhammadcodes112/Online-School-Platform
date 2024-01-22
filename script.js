@@ -37,6 +37,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
+//  header 
+const header = document.getElementById('main-header');
+let lastScrollPosition = 0;
+
+window.addEventListener('scroll', function () {
+    const currentScrollPosition = window.scrollY;
+
+    // Check the scroll direction
+    if (currentScrollPosition > lastScrollPosition) {
+        // Scrolling down
+        header.style.top = '5px';
+    } else {
+        // Scrolling up
+        header.style.top = '0';
+    }
+
+    // Update the last scroll position
+    lastScrollPosition = currentScrollPosition;
+
+    // Toggle the 'fixed' class based on the scroll position
+    if (currentScrollPosition > 200) {
+        header.classList.add('fixed');
+    } else {
+        header.classList.remove('fixed');
+    }
+});
+
+
+
+
+
 
 // animate on scroll
 const boxes = document.querySelectorAll('.animate')
@@ -81,10 +112,10 @@ const boxes = document.querySelectorAll('.animate')
   darkModeToggle.addEventListener('click', function () {
     // Toggle dark mode styles on body and wrapper
     body.classList.toggle('dark-mode');
-    wrapper.classList.toggle('home-darkmode');
+    wrapper.classList.toggle('dark-mode');
 
     // Toggle background color of home section
     const isDarkModeEnabled = body.classList.contains('dark-mode');
-    const homepage = wrapper.classList.contains('home-darkmode');
-    wrapper.style.backgroundColor = isDarkModeEnabled ? '#6d6a6a' : ''; // Set the background color to white if dark mode is enabled
+    const homepage = wrapper.classList.contains('dark-mode');
+    // wrapper.style.backgroundColor = isDarkModeEnabled ? '#6d6a6a' : ''; // Set the background color to white if dark mode is enabled
   });
