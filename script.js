@@ -85,6 +85,6 @@ const boxes = document.querySelectorAll('.animate')
 
     // Toggle background color of home section
     const isDarkModeEnabled = body.classList.contains('dark-mode');
-    // const homepage = wrapper.classList.contains('home-darkmode');
+    const homepage = wrapper.classList.contains('home-darkmode');
     wrapper.style.backgroundColor = isDarkModeEnabled ? '#6d6a6a' : ''; // Set the background color to white if dark mode is enabled
   });
