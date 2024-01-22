@@ -55,3 +55,17 @@ const boxes = document.querySelectorAll('.animate')
         }
 
 
+
+// Darkmode
+  // darkmode Feature
+  const darkModeToggle = document.getElementById('darkmode');
+  const body = document.body;
+  const wrapper = document.getElementById('home');
+  
+  darkModeToggle.addEventListener('click', function () {
+      // Toggle dark mode styles on body and wrapper
+      body.classList.toggle('dark-mode');
+      wrapper.classList.toggle('home-darkmode');
+  
+      // Save dark mode preference (optional, can be stored in localStorage)
+      const isDarkModeEnabled = body.classList.contains('dark-mode');})

@@ -56,7 +56,18 @@ h5{
 body {
     color: #ffffff;
     background-color: var(--bg-color);
+    transition: .5s ease;
 }
+.dark-mode{
+    background-color: #fff;
+    color: #132d46;
+}
+.home-darkmode{
+    background-color: #fff;
+
+}
+
+
 
 
 /* animate */
@@ -675,6 +686,8 @@ footer .content .down{
         position: fixed;
         right: 20px;
         bottom: 25px;
+        border: 0.7px solid #01C38D;
+        mix-blend-mode: difference;
     }
 
 
