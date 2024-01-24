@@ -6,22 +6,33 @@
     <title>Blog Page</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <!-- <div id="loader"></div> -->
 <body id="content">
-    <header>
+    <header id="main-header">
         <div class="logo">Courses</div>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+
+        <div class="left">
+            <div id="darkmode" style="width: 30px; height: 30px; border: 1px solid #01C38D; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+                <span id="themeIcon">
+                    <i class="ri-moon-line"></i>
+                </span>
+            </div>
+
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </div>
+
         <nav class="nav-bar">
             <ul>
-                <li><a href="./index.html" class="">Home</a></li>
+                <li><a href="" class="">Home</a></li>
                 <li><a href="./courses.html" class="">Courses</a></li>
                 <li><a href="./about.html" class="">About</a></li>
-                <li><a href="" class="">Blog</a></li>
+                <li><a href="./blog.html" class="">Blog</a></li>
                 <li><a href="" class="">Contact</a></li>
                 <div class="acc">
                     <a href="#" class="btn">Join</a>
@@ -29,6 +40,7 @@
                 </div>
             </ul>
         </nav>
+       
     </header>
 
 

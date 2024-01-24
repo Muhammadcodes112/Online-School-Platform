@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         loader.style.display = "none";
         content.style.display = "block"; 
-    }, 2000);
+    }, 1000);
 });
 
 
@@ -87,35 +87,32 @@ const boxes = document.querySelectorAll('.animate')
 
 
 
-// // Darkmode
-//   // darkmode Feature
-//   const darkModeToggle = document.getElementById('darkmode');
-//   const body = document.body;
-//   const wrapper = document.getElementById('home');
-  
-//   darkModeToggle.addEventListener('click', function () {
-//       // Toggle dark mode styles on body and wrapper
-//       body.classList.toggle('dark-mode');
-//       wrapper.classList.toggle('home-darkmode');
-  
-//       // Save dark mode preference (optional, can be stored in localStorage)
-//       const isDarkModeEnabled = body.classList.contains('dark-mode');})
+const theme = document.getElementById("darkmode");
+const themeIcon = document.getElementById("themeIcon");
 
+theme.onclick = function() {
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme")) {
+    themeIcon.innerHTML = '<i class="ri-sun-line"></i>';
+    } else {
+    themeIcon.innerHTML = '<i class="ri-moon-line"></i>';
+    }
+};
 
 
 
   // Dark mode toggle
-  const darkModeToggle = document.getElementById('darkmode');
-  const body = document.body;
-  const wrapper = document.getElementById('home');
+//   const darkModeToggle = document.getElementById('darkmode');
+//   const body = document.body;
+//   const wrapper = document.getElementById('home');
 
-  darkModeToggle.addEventListener('click', function () {
-    // Toggle dark mode styles on body and wrapper
-    body.classList.toggle('dark-mode');
-    wrapper.classList.toggle('dark-mode');
+//   darkModeToggle.addEventListener('click', function () {
+//     // Toggle dark mode styles on body and wrapper
+//     body.classList.toggle('dark-mode');
+//     wrapper.classList.toggle('dark-mode');
 
-    // Toggle background color of home section
-    const isDarkModeEnabled = body.classList.contains('dark-mode');
-    const homepage = wrapper.classList.contains('dark-mode');
-    // wrapper.style.backgroundColor = isDarkModeEnabled ? '#6d6a6a' : ''; // Set the background color to white if dark mode is enabled
-  });
+//     // Toggle background color of home section
+//     const isDarkModeEnabled = body.classList.contains('dark-mode');
+//     const homepage = wrapper.classList.contains('dark-mode');
+//     // wrapper.style.backgroundColor = isDarkModeEnabled ? '#6d6a6a' : ''; // Set the background color to white if dark mode is enabled
+//   });

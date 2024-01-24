@@ -28,7 +28,10 @@ h1{
 h5{
     font-size: 0.8rem;
     letter-spacing: 1px;
-    color: var(--text-color);
+    mix-blend-mode: normal;
+}
+#themeIcon{
+    transition: .5s ease;
 }
 .btn{
     color: var(--second-text-color);
@@ -59,31 +62,38 @@ body {
     transition: .5s ease;
     overflow-x: hidden;
 }
-/* .dark-mode{
-    background-color: #fff;
-    color: #132d46;
-}
-.home-darkmode{
-    background-color: #fff;
 
+
+/* Darkmode */
+/* body.dark-mode{
+    background-color: var(--text-color);
 } */
+.dark-theme {
+     --bg-color: #252d3d;
+    --second-bg-color: #01C38D;
+    --text-color: #191E29;
+    --second-text-color: #ffffff;
+    --main-color: #696e79;
 
 
-.dark-mode {
-    /* background-color: #132d46; */
-    color: #fff;
-  }
-  
-  .home.darkmode {
-    background-color: #fff;
+    /* --bg-color: #191E29;
+    --second-bg-color: #132d46;
+    --text-color: #01C38D;
+    --second-text-color: #ffffff;
+    --main-color: #696e79; */
+}  
+/* .home.dark-theme {
+    background-color: var(--text-color);
     color: #132d46;
-  }
-  
-  #home {
     transition: background-color 0.3s, color 0.3s;
-  }
-  
+}
+.courses.dark-theme {
+    background-color: var(--text-color);
+    color: #132d46;
+    transition: background-color 0.3s, color 0.3s;
+}
 
+ */
 
 /* animate */
 .animate:nth-of-type(even){
@@ -148,8 +158,6 @@ header{
 header.fixed{
     position: fixed;
     width: 98%;
-    /* top: 0; */
-    /* right: 3; */
     animation: fadeInDown 0.5s;
     margin-left: 12px;
     margin-right: auto;
@@ -194,7 +202,9 @@ header.fixed{
 .nav-bar ul li a:hover{
     color: var(--text-color);
 }
-
+#darkmode{
+    background-color: var(--second-bg-color);
+}
 
 
 
@@ -664,6 +674,10 @@ footer .content .down{
         margin-left: 10px;
         margin-right: auto;
         border: 1px solid #01C38D;
+    }
+    .left{
+        display: flex;
+        gap: 50px;
     }
     
 }
