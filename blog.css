@@ -34,3 +34,97 @@
 
 
 
+
+
+
+
+
+
+
+
+.blog{
+    width: 100%;
+    height: fit-content;
+    background-color: red;
+}
+.blog img{
+    height: 300px;
+    width: 100%;
+}
+.blog .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40PX;
+}
+.blog .content .news{
+    background-color: blue;
+    width: 700px;
+}
+.blog .content .news .content{
+    display: grid;
+}
+.blog .content .news .content .box1{
+    display: grid;
+    gap: 40px;
+    border: 1px solid red;
+    padding: 20px;
+}
+.blog .content .news .content .box1 .txt{
+    display: grid;
+    gap: 20px;
+}
+.blog .content .recent-post{
+    background-color: green;
+    /* width: 350px; */
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+
+.blog .content .recent-post .box1 input{
+    padding: 10px;
+}
+.blog .content .recent-post .box1{
+    background-color: #848181;
+    padding: 30px;
+    display: grid;
+    gap: 50px;
+}
+.blog .content .recent-post .up{
+    
+}
+.blog .content .recent-post .down a{
+    color: #f70404;
+    border: 1px solid red;
+    padding: 10px 115px 10px 115px;
+    width: 200px;
+   
+}
+.line{
+    background-color: #fff;
+    width: 300px;
+    height: 0.5px;
+}
+.blog .content .recent-post .box2{
+    background-color: #848181;
+    padding: 30px;
+    display: grid;
+    gap: 20px;
+}
+.blog .content .recent-post .box3{
+    background-color: #848181;
+    padding: 30px;
+    display: grid;
+    gap: 20px;
+}
+.blog .content .recent-post .box3 .post{
+    display: flex;
+    gap: 20px;
+}
+.blog .content .recent-post .box3 .post img{
+    width: 80px;
+    height: 80px;
+}
