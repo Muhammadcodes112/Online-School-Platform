@@ -18,6 +18,19 @@
     --second-text-color: #ffffff;
     --main-color: #696e79;
 }
+.green{
+    transition: .5s ease;
+}
+.green:hover{
+    color: #01C38D;
+}
+.greenBtn{
+    transition: .5s ease;
+}
+.greenBtn:hover{
+    background-color: var(--text-color);
+    color: var(--second-bg-color);
+}
 a{
     color: #ffffff;
 }

@@ -1,5 +1,12 @@
 
 
+:root{
+    --bg-color: #191E29;
+    --second-bg-color: #132d46;
+    --text-color: #01C38D;
+    --second-text-color: #ffffff;
+    --main-color: #696e79;
+}
 
 /* Home Page */
 .home{
@@ -45,7 +52,7 @@
 .blog{
     width: 100%;
     height: fit-content;
-    background-color: red;
+    background-color: var(--second-bg-color);
 }
 .blog img{
     height: 300px;
@@ -59,7 +66,7 @@
     padding: 40PX;
 }
 .blog .content .news{
-    background-color: blue;
+    background-color: var(--bg-color);
     width: 700px;
 }
 .blog .content .news .content{
@@ -68,16 +75,16 @@
 .blog .content .news .content .box1{
     display: grid;
     gap: 40px;
-    border: 1px solid red;
+    border: 1px solid #01C38D;
     padding: 20px;
+    background-color: var(--second-bg-color);
 }
 .blog .content .news .content .box1 .txt{
     display: grid;
     gap: 20px;
 }
 .blog .content .recent-post{
-    background-color: green;
-    /* width: 350px; */
+    background-color: var(--bg-color);
     padding: 20px;
     display: grid;
     gap: 20px;
@@ -86,36 +93,33 @@
 
 .blog .content .recent-post .box1 input{
     padding: 10px;
+    width: 70%;
 }
 .blog .content .recent-post .box1{
-    background-color: #848181;
+    background-color: var(--second-bg-color);
     padding: 30px;
     display: grid;
     gap: 50px;
 }
-.blog .content .recent-post .up{
-    
-}
 .blog .content .recent-post .down a{
-    color: #f70404;
-    border: 1px solid red;
-    padding: 10px 115px 10px 115px;
-    width: 200px;
-   
+    color: var(--text-color);
+    border: 1px solid #01C38D;
+    padding: 20px 170px 20px 130px;
+    width: 100%;
 }
 .line{
     background-color: #fff;
-    width: 300px;
+    width: 100%;
     height: 0.5px;
 }
 .blog .content .recent-post .box2{
-    background-color: #848181;
+    background-color: var(--second-bg-color);
     padding: 30px;
     display: grid;
     gap: 20px;
 }
 .blog .content .recent-post .box3{
-    background-color: #848181;
+    background-color: var(--second-bg-color);
     padding: 30px;
     display: grid;
     gap: 20px;
@@ -128,3 +132,39 @@
     width: 80px;
     height: 80px;
 }
+.blog .content .recent-post .box4{
+    background-color: var(--second-bg-color);
+    padding: 30px;
+    display: grid;
+    gap: 20px;
+}
+.blog .content .recent-post .box4 .links{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+.blog .content .recent-post .box4 .links a{
+    width: fit-content;
+    background-color: var(--bg-color);
+    padding: 5px 15px 5px 15px;
+    border: 0.7px solid black;
+}
+.blog .content .recent-post .box5{
+    background-color: var(--second-bg-color);
+    padding: 30px;
+    display: grid;
+    gap: 20px;
+}
+.blog .content .recent-post .box5 input{
+    padding: 15px;
+    width: 100%;
+}
+.blog .content .recent-post .box5 a{
+    color: var(--text-color);
+    border: 1px solid #01C38D;
+    padding: 20px 115px 20px 130px;
+    width: 100%;
+}
+
+
