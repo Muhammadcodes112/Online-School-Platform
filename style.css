@@ -42,7 +42,7 @@ h1{
 h5{
     font-size: 0.8rem;
     letter-spacing: 1px;
-    mix-blend-mode: normal;
+    mix-blend-mode: normal; 
 }
 #themeIcon{
     transition: .5s ease;

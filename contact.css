@@ -123,7 +123,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    border: 1px solid #191E29;
     width: 700px;
     height: 80px;
     gap: 20px;
