@@ -532,6 +532,7 @@ footer .content .up{
 footer .content .up .left{
     width: 300px;
     line-height: 40px;
+    display: grid;
 }
 footer .content .up .right{
     display: flex;
@@ -643,7 +644,7 @@ footer .content .down{
 
 
         footer{
-            height: 150vh;
+            height: 85vh;
         }
         footer .content{
             padding-left: 50px;
@@ -663,20 +664,6 @@ footer .content .down{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 1100px) {
     header{
         padding: 0 30px;
@@ -694,7 +681,9 @@ footer .content .down{
         gap: 50px;
     }
     
+
 }
+
 @media only screen and (max-width: 900px) {
     h1{
         font-size: 2rem;
@@ -797,6 +786,8 @@ footer .content .down{
         width: 600px;
         padding: 0;
     }
+
+
 }
 
 
@@ -855,7 +846,7 @@ footer .content .down{
 
 
         footer{
-            height: 220vh;
+            height: 180vh;
         }
         footer .content .up .right{
             display: grid;
@@ -886,5 +877,10 @@ footer .content .down{
     }
     .community {
         height: 180vh;
+    }
+
+
+    footer{
+        height: 240vh;
     }
 }
