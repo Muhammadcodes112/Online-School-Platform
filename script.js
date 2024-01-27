@@ -83,7 +83,7 @@ const boxes = document.querySelectorAll('.animate')
                     box.classList.remove('show')
                 }
             })
-        }
+        }   
 
 
 
