@@ -228,6 +228,7 @@ header.fixed{
 .home{
     height: 100vh;
     background-color: var(--bg-color);
+    overflow-x: hidden;
 }
 .home .content{
     display: flex;
