@@ -168,6 +168,7 @@ header{
     z-index: 1;
     position: relative;
     transition: top 0.3s ease-in-out;
+    overflow: hidden;
 }
 header.fixed{
     position: fixed;
