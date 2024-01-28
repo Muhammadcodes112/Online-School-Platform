@@ -75,8 +75,11 @@ body {
     background-color: var(--bg-color);
     transition: .5s ease;
     overflow-x: hidden;
+    overflow: hidden;
 }
-
+#content{
+    overflow: hidden;
+}
 
 /* Darkmode */
 /* body.dark-mode{
@@ -88,26 +91,8 @@ body {
     --text-color: #191E29;
     --second-text-color: #ffffff;
     --main-color: #696e79;
-
-
-    /* --bg-color: #191E29;
-    --second-bg-color: #132d46;
-    --text-color: #01C38D;
-    --second-text-color: #ffffff;
-    --main-color: #696e79; */
 }  
-/* .home.dark-theme {
-    background-color: var(--text-color);
-    color: #132d46;
-    transition: background-color 0.3s, color 0.3s;
-}
-.courses.dark-theme {
-    background-color: var(--text-color);
-    color: #132d46;
-    transition: background-color 0.3s, color 0.3s;
-}
 
- */
 
 /* animate */
 .animate:nth-of-type(even){
@@ -120,6 +105,7 @@ body {
     transform: translateX(400%);
     transition: transform 1.4s ease;
 }
+
 /* loader */
 #loader{
     margin-top: 200px;
@@ -168,7 +154,7 @@ header{
     z-index: 1;
     position: relative;
     transition: top 0.3s ease-in-out;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 header.fixed{
     position: fixed;
