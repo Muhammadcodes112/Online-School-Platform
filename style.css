@@ -67,15 +67,11 @@ h5{
     box-shadow:  3px 3px 3px #01C38D,
     -3px -3px 3px #01C38D;
 }
-.hamburger{
-    display: none;
-}
 body {
     color: #ffffff;
     background-color: var(--bg-color);
     transition: .5s ease;
     overflow-x: hidden;
-    overflow: hidden;
 }
 #content{
     overflow: hidden;
@@ -124,6 +120,9 @@ body {
 
 
 /* HEADER  */
+.hamburger{
+    display: none;
+}
 header{
     width: 98%;
     border-radius: 10px;
@@ -139,7 +138,6 @@ header{
     z-index: 1;
     position: relative;
     transition: top 0.3s ease-in-out;
-    overflow-x: hidden;
 }
 header.fixed{
     position: fixed;

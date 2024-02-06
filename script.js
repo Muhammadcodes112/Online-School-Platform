@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 // code for loader
 document.addEventListener("DOMContentLoaded", function () {
     var loader = document.getElementById("loader");
@@ -10,31 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         loader.style.display = "none";
         content.style.display = "block"; 
-    }, 1000);
+    }, 1000);   
 });
 
 
 // header responsiveness code
-hamburger = document.querySelector(".hamburger");
+const hamburger = document.querySelector(".hamburger");
 hamburger.onclick = function(){
     navBar = document.querySelector(".nav-bar");
     navBar.classList.toggle("active");
 }
 
 
-
-// code for floating button
-document.addEventListener('DOMContentLoaded', function() {
-    var button = document.getElementById('floatingbtn');
-    window.addEventListener('scroll', function() {
-        var scrollPosition = window.scrollY;
-
-        if (scrollPosition < 20) {
-            button.style.opacity = '0';
-        }else{
-            button.style.opacity = '1';
-        }});
-    });
 
 
 //  header 
@@ -63,6 +58,22 @@ window.addEventListener('scroll', function () {
         header.classList.remove('fixed');
     }
 });
+
+
+
+// code for floating button
+document.addEventListener('DOMContentLoaded', function() {
+    var button = document.getElementById('floatingbtn');
+    window.addEventListener('scroll', function() {
+        var scrollPosition = window.scrollY;
+
+        if (scrollPosition < 20) {
+            button.style.opacity = '0';
+        }else{
+            button.style.opacity = '1';
+        }});
+    });
+
 
 
 
@@ -116,3 +127,6 @@ theme.onclick = function() {
 //     const homepage = wrapper.classList.contains('dark-mode');
 //     // wrapper.style.backgroundColor = isDarkModeEnabled ? '#6d6a6a' : ''; // Set the background color to white if dark mode is enabled
 //   });
+
+
+
