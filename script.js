@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 // code for loader
 document.addEventListener("DOMContentLoaded", function () {
     var loader = document.getElementById("loader");
@@ -77,9 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
 // animate on scroll
 const boxes = document.querySelectorAll('.animate')
         window.addEventListener('scroll', checkBoxes)
@@ -95,6 +84,17 @@ const boxes = document.querySelectorAll('.animate')
                 }
             })
         }   
+
+
+
+
+
+
+
+
+
+
+        
 
 
 

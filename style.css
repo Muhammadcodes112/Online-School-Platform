@@ -9,8 +9,20 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
-    scroll-snap-type: initial;
+    /* scroll-snap-type: initial; */
 }
+
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .animate.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 :root{
     --bg-color: #191E29;
     --second-bg-color: #132d46;
@@ -71,7 +83,7 @@ body {
     color: #ffffff;
     background-color: var(--bg-color);
     transition: .5s ease;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 #content{
     overflow: hidden;
@@ -760,6 +772,13 @@ footer .content .down{
         gap: 10px;
         width: 600px;
         padding: 0;
+    }
+
+    .box:nth-of-type(even){
+        transform: translateX(-400%);
+    }
+    .box.show{
+        transform: translateX(0);
     }
 
 
