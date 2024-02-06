@@ -523,10 +523,14 @@ footer .content .down{
     @media only screen and (max-width: 1320px) {
         header{
             width: 95%;
+            
+        }
+        #main-header .nav-bar {
+            width: 95%;
         }
         header.fixed{
             position: fixed;
-            width: 95%;
+            width: 93%;
             animation: fadeInDown 0.5s;
             margin-left: 10px;
             margin-right: auto;
@@ -641,10 +645,10 @@ footer .content .down{
     }
     header.fixed{
         position: fixed;
-        width: 97.5%;
+        width: 95%;
         animation: fadeInDown 0.5s;
-        margin-left: 10px;
-        margin-right: auto;
+        /* margin-left: 10px;
+        margin-right: auto; */
         border: 1px solid #01C38D;
     }
     .left{
