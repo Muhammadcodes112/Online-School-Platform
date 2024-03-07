@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="blog.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
+<style>
+    .nav-bar ul li a.active {
+        color: #01C38D;
+    }
+</style>
 <body>
     
 
@@ -41,7 +45,7 @@
                     <li><a href="./index.html" class="">Home</a></li>
                     <li><a href="./courses.html" class="">Courses</a></li>
                     <li><a href="./about.html" class="">About</a></li>
-                    <li><a href="./blog.html" class="">Blog</a></li>
+                    <li><a href="./blog.html" class="active">Blog</a></li>
                     <li><a href="./contact.html" class="">Contact</a></li>
                     <div class="acc">
                         <a href="#" class="btn">Join</a>
@@ -63,7 +67,8 @@
                     </div>
                 </div>
                 <div>
-                    <a href="#" id="floatingbtn" class="slideinright"><box-icon type='solid' name='chevrons-up' class="bi" size="30px"></box-icon></a>
+                    <a href="#" id="floatingbtn" class="slideinright" style="display: flex; "><i class="ri-arrow-up-line"
+                        style="font-size: 2rem;"></i></a>
             </div>
             </div>
         </section>

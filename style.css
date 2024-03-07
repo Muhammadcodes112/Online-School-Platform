@@ -1,4 +1,5 @@
 @import url('Https://fonts.googleapis.com/css2?family=Poppins');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,50 +17,58 @@
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s, transform 0.5s;
-  }
-  
-  .animate.show {
+}
+
+.animate.show {
     opacity: 1;
     transform: translateY(0);
-  }
-  
-:root{
+}
+
+:root {
     --bg-color: #191E29;
     --second-bg-color: #132d46;
     --text-color: #01C38D;
     --second-text-color: #ffffff;
     --main-color: #696e79;
 }
-.green{
+
+.green {
     transition: .5s ease;
 }
-.green:hover{
+
+.green:hover {
     color: #01C38D;
 }
 
-.greenBtn{
+.greenBtn {
     transition: .5s ease;
 }
-.greenBtn:hover{
+
+.greenBtn:hover {
     background-color: var(--text-color);
     color: var(--second-bg-color);
 }
-a{
+
+a {
     color: #ffffff;
 }
-h1{
+
+h1 {
     font-size: 3rem;
     line-height: 60px;
 }
-h5{
+
+h5 {
     font-size: 0.8rem;
     letter-spacing: 1px;
-    mix-blend-mode: normal; 
+    mix-blend-mode: normal;
 }
-#themeIcon{
+
+#themeIcon {
     transition: .5s ease;
 }
-.btn{
+
+.btn {
     color: var(--second-text-color);
     background-color: var(--text-color);
     padding-top: 10px;
@@ -74,33 +83,46 @@ h5{
     font-weight: 600;
     transition: .5s ease;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #039a6f;
-    box-shadow:  3px 3px 3px #01C38D,
-    -3px -3px 3px #01C38D;
+    box-shadow: 3px 3px 3px #01C38D,
+        -3px -3px 3px #01C38D;
 }
+
 body {
     color: #ffffff;
     background-color: var(--bg-color);
     transition: .5s ease;
     /* overflow-x: hidden; */
 }
-#content{
+
+#content {
     overflow: hidden;
 }
 
+#darkmode {
+    background-color: var(--second-bg-color);
+    width: 30px;
+    height: 30px;
+    border: 1px solid #222222;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .dark-theme {
-     --bg-color: #252d3d;
+    --bg-color: #252d3d;
     --second-bg-color: #01C38D;
     --text-color: #191E29;
     --second-text-color: #ffffff;
     --main-color: #696e79;
-}  
+}
 
 
 /* loader */
-#loader{
+#loader {
     margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
@@ -110,9 +132,10 @@ body {
     align-items: center;
     width: 50%;
 }
+
 .loader {
     border: 10px solid #f3f3f3;
-    border-top: 16px solid #01C38D; 
+    border-top: 16px solid #01C38D;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -122,9 +145,15 @@ body {
     margin: auto;
     animation: spin 2s linear infinite;
 }
+
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -132,10 +161,11 @@ body {
 
 
 /* HEADER  */
-.hamburger{
+.hamburger {
     display: none;
 }
-header{
+
+header {
     width: 98%;
     border-radius: 10px;
     height: 90px;
@@ -151,7 +181,8 @@ header{
     position: relative;
     transition: top 0.3s ease-in-out;
 }
-header.fixed{
+
+header.fixed {
     position: fixed;
     width: 98%;
     animation: fadeInDown 0.5s;
@@ -165,24 +196,28 @@ header.fixed{
         opacity: 0;
         transform: translateY(-50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.logo{
+.logo {
     font-size: 28px;
     font-weight: bold;
     color: var(--second-text-color);
 }
-.hamburger{
+
+.hamburger {
     display: none;
 }
-.nav-bar ul{
+
+.nav-bar ul {
     display: flex;
 }
-.nav-bar ul li a{
+
+.nav-bar ul li a {
     display: block;
     color: var(--second-text-color);
     font-size: 0.8rem;
@@ -191,27 +226,27 @@ header.fixed{
     transition: 0.5s;
     margin: 0 5px;
 }
-.acc{
+
+.acc {
     display: flex;
     gap: 15px;
 }
-.nav-bar ul li a:hover{
+
+.nav-bar ul li a:hover {
     color: var(--text-color);
-}
-#darkmode{
-    background-color: var(--second-bg-color);
 }
 
 
 
 
 /* Home Page */
-.home{
+.home {
     height: 100vh;
     background-color: var(--bg-color);
     overflow-x: hidden;
 }
-.home .content{
+
+.home .content {
     display: flex;
     padding-left: 70px;
     padding-right: 70px;
@@ -220,16 +255,19 @@ header.fixed{
     align-items: center;
     height: 100vh;
 }
-.home .content .left{
+
+.home .content .left {
     display: grid;
     padding: 30px;
     gap: 20px;
 }
-.home .content .right img{
+
+.home .content .right img {
     width: 100px;
     height: 100px;
 }
-#floatingbtn{
+
+#floatingbtn {
     display: none
 }
 
@@ -240,55 +278,65 @@ header.fixed{
 
 
 /* Courses Page */
-.courses{
+.courses {
     height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--second-bg-color);
 }
-.courses .content{
+
+.courses .content {
     display: grid;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-.courses .content .up{
+
+.courses .content .up {
     text-align: center;
 }
-.courses .content .down{
+
+.courses .content .down {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     padding: 15px;
 }
-.courses .content .down .box{
+
+.courses .content .down .box {
     width: 300px;
-    border: 1px solid #01C38D; 
+    border: 1px solid #01C38D;
     background-color: var(--bg-color);
 }
-.courses .content .down .box .below{
+
+.courses .content .down .box .below {
     padding: 20px;
     font-size: 0.8rem;
     display: grid;
     gap: 40px;
 }
-.courses .content .down .box .below .rating{
+
+.courses .content .down .box .below .rating {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.courses .content .down .box .below .rating img{
+
+.courses .content .down .box .below .rating img {
     width: 25px;
 }
-.courses .content .down .box .below .text{
+
+.courses .content .down .box .below .text {
     line-height: 25px;
 }
-.courses .content .down .box .below .text h4{
+
+.courses .content .down .box .below .text h4 {
     color: var(--text-color);
 }
-.courses .content .down .box a{
+
+.courses .content .down .box a {
     color: #ffffff;
     font-size: 1rem;
     padding-top: 15px;
@@ -303,13 +351,15 @@ header.fixed{
     font-weight: 600;
     background-color: var(--text-color);
 }
-.courses .content .down .box .image{
+
+.courses .content .down .box .image {
     width: 100%;
     height: 10%;
 }
-.courses .content .down .box .image img{
-    width: 100%;   
-    height: 100%; 
+
+.courses .content .down .box .image img {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -317,46 +367,52 @@ header.fixed{
 
 
 /* Subjects Page */
-.subjects{
+.subjects {
     height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color);
 }
-.subjects .content{
+
+.subjects .content {
     display: grid;
     gap: 40px;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.subjects .content .middle{
+
+.subjects .content .middle {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .subjects .content .middle .box {
     width: 250px;
     height: 150px;
-    position: relative;    
+    position: relative;
     overflow: hidden;
-    transition: .5s ease; 
-    border-radius: 10px;      
+    transition: .5s ease;
+    border-radius: 10px;
 }
-.subjects .content .middle .box img:hover{
+
+.subjects .content .middle .box img:hover {
     filter: grayscale(1);
     transform: scale(1.2);
 }
-.subjects .content .middle .box img{
+
+.subjects .content .middle .box img {
     width: 100%;
-    transition: .5s ease;    
-    border-radius: 10px;    
-    border: 2px solid #01C38D; 
+    transition: .5s ease;
+    border-radius: 10px;
+    border: 2px solid #01C38D;
 }
-.subjects .content .middle .box a{
+
+.subjects .content .middle .box a {
     position: absolute;
     top: 80px;
     left: 20px;
@@ -365,7 +421,8 @@ header.fixed{
     z-index: 1;
     font-weight: 700;
 }
-.subjects .content .btn1{
+
+.subjects .content .btn1 {
     color: var(--text-color);
     background-color: transparent;
     padding-top: 15px;
@@ -389,14 +446,15 @@ header.fixed{
 
 
 /* Learners Page */
-.learners{
+.learners {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--second-bg-color);
 }
-.learners .content{
+
+.learners .content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -404,13 +462,15 @@ header.fixed{
     padding-left: 30px;
     padding-right: 30px;
 }
-.learners .content .left img{
+
+.learners .content .left img {
     width: 400px;
     height: 400px;
     border-radius: 50%;
     border: 1px solid #01C38D;
 }
-.learners .content .right h4{
+
+.learners .content .right h4 {
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -423,14 +483,15 @@ header.fixed{
 
 
 /* Community Experts Page */
-.community{
+.community {
     height: 130vh;
     background-color: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.community .content{
+
+.community .content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -440,16 +501,19 @@ header.fixed{
     padding-left: 50px;
     padding-right: 50px;
 }
+
 .community .content .box {
     display: grid;
     gap: 20px;
 }
-.community .content .box img{
+
+.community .content .box img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
-.community .content .box .down{
+
+.community .content .box .down {
     line-height: 40px;
 }
 
@@ -457,14 +521,15 @@ header.fixed{
 
 
 /* GOALS Page */
-.goals{
+.goals {
     height: 130vh;
     background-color: var(--second-bg-color);
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
-.goals .content{
+
+.goals .content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -472,17 +537,20 @@ header.fixed{
     padding-right: 50px;
     gap: 50px;
 }
-.goals .content .left img{
+
+.goals .content .left img {
     width: 600px;
     height: 400px;
     border-radius: 10px;
     border: 1px solid #01C38D;
 }
-.goals .content .right h1{
+
+.goals .content .right h1 {
     line-height: 60px;
     font-size: 2rem;
 }
-.goals .content .right{
+
+.goals .content .right {
     gap: 20px;
     display: grid;
 }
@@ -491,38 +559,44 @@ header.fixed{
 
 
 /* FOOTER */
-footer{
+footer {
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color);
 }
-footer .content{
+
+footer .content {
     display: grid;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
+    gap: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 0.7rem;
 }
-footer .content .up{
+
+footer .content .up {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
 }
-footer .content .up .left{
+
+footer .content .up .left {
     width: 300px;
     line-height: 40px;
     display: grid;
 }
-footer .content .up .right{
+
+footer .content .up .right {
     display: flex;
     gap: 120px;
     line-height: 35px;
 }
-footer .content .down{
+
+footer .content .down {
     text-align: center;
 }
 
@@ -531,16 +605,24 @@ footer .content .down{
 
 
 
-@media only screen and (max-width: 1000px){
-    @media only screen and (max-width: 1320px) {
-        header{
+@media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 1220px) {
+        header {
             width: 95%;
-            
+            gap: 20px;
+            align-items: center;
+
         }
+
+        header .logo {
+            font-size: 1.5rem;
+        }
+
         #main-header .nav-bar {
             width: 95%;
         }
-        header.fixed{
+
+        header.fixed {
             position: fixed;
             width: 93%;
             animation: fadeInDown 0.5s;
@@ -548,80 +630,98 @@ footer .content .down{
             margin-right: auto;
             border: 1px solid #01C38D;
         }
-        h1{
+
+        h1 {
             font-size: 3rem;
             line-height: 50px;
         }
-        h5{
+
+        h5 {
             font-size: 0.8rem;
             letter-spacing: 1px;
             line-height: 25px;
         }
-        header{
+
+        header {
             padding: 0 50px;
         }
-        header .nav-bar ul li a{
-            font-size: 0.8rem;
+
+        header .nav-bar ul li a {
+            font-size: 0.7rem;
         }
-        .home{
+
+        .home {
             height: 100vh;
         }
-        .home .content .right{
+
+        .home .content .right {
+            display: none;
+        }
+
+        header .acc .btn {
+            font-size: 0.7rem;
+            padding: 10px 20px;
+        }
+
+
+        .courses {
+            height: 170vh;
+        }
+
+        .courses .content .down .box:nth-child(1) {
             display: none;
         }
 
 
-        .courses{
+        .subjects {
             height: 170vh;
         }
-        .courses .content .down .box:nth-child(1){
-            display: none;
-        }
-        
 
-        .subjects{
-            height: 170vh;
-        }
-        
 
-        .learners .content{
+        .learners .content {
             gap: 30px;
         }
-        .learners .content .left img{
+
+        .learners .content .left img {
             width: 300px;
             height: 300px;
         }
 
 
-        
-        .community .content .box .up img{
+
+        .community .content .box .up img {
             width: 150px;
             height: 150px;
         }
-        .community .content .box .down h2{
+
+        .community .content .box .down h2 {
             font-size: 1rem;
         }
-        .community .content .box .down h5{
+
+        .community .content .box .down h5 {
             font-size: 0.6rem;
             line-height: 20px;
         }
 
 
 
-        
-        .goals .content .left img{
+
+        .goals .content .left img {
             width: 300px;
             height: 300px;
         }
-        .goals .content .right h1{
+
+        .goals .content .right h1 {
             font-size: 1.5rem;
             line-height: 30px;
         }
-        .goals .content .right h5{
+
+        .goals .content .right h5 {
             font-size: 0.8rem;
             line-height: 30px;
         }
-        .goals .content .right a{
+
+        .goals .content .right a {
             font-size: 0.9rem;
             padding: 15px 20px 15px 20px;
         }
@@ -630,21 +730,33 @@ footer .content .down{
 
 
 
-        footer{
-            height: 85vh;
+        footer {
+            height: 100vh;
+
         }
-        footer .content{
+
+        footer .up .left {
+            display: grid;
+            gap: 20px;
+        }
+
+        footer .content {
             padding-left: 50px;
             padding-right: 50px;
-            font-size: 1rem;
+            font-size: 0.8rem;
+            margin-top: 50px;
         }
-        footer .content .up{
+
+        footer .content .up {
             display: grid;
+            gap: 10px;
         }
-        footer .content .up .right{
+
+        footer .content .up .right {
             gap: 70px;
         }
-        footer .content .down h5{
+
+        footer .content .down h5 {
             font-size: 0.7rem;
         }
     }
@@ -652,10 +764,11 @@ footer .content .down{
 
 
 @media only screen and (max-width: 1100px) {
-    header{
+    header {
         padding: 0 30px;
     }
-    header.fixed{
+
+    header.fixed {
         position: fixed;
         width: 95%;
         animation: fadeInDown 0.5s;
@@ -663,42 +776,54 @@ footer .content .down{
         margin-right: auto; */
         border: 1px solid #01C38D;
     }
-    .left{
+
+    .left {
         display: flex;
         gap: 50px;
     }
-    
+
 
 }
 
 @media only screen and (max-width: 900px) {
-    h1{
+    h1 {
         font-size: 2rem;
         line-height: 40px;
     }
-    h5{
+
+    h5 {
         font-size: 0.8rem;
         letter-spacing: 1px;
         line-height: 25px;
     }
-    .btn{
+
+    .btn {
         font-size: 0.8rem;
         padding: 15px 35px 15px 35px;
     }
-    header{
+
+    header {
         height: 70px;
     }
-    .hamburger{
+
+    .hamburger {
         display: block;
         cursor: pointer;
     }
-    .hamburger .line{
+
+    .hamburger .line {
         width: 30px;
         height: 3px;
         background: #fefefe;
         margin: 6px 0;
+        transition: .5s ease;
     }
-    .nav-bar{
+
+    .hamburger .line:hover {
+        background-color: #01C38D;
+    }
+
+    .nav-bar {
         height: 0;
         position: absolute;
         top: 90px;
@@ -712,10 +837,12 @@ footer .content .down{
         overflow: hidden;
         border-radius: 10px;
     }
-    .nav-bar.active{
+
+    .nav-bar.active {
         height: 300px;
     }
-    .nav-bar ul{
+
+    .nav-bar ul {
         display: block;
         width: fit-content;
         margin: 30px auto 0 auto;
@@ -723,15 +850,17 @@ footer .content .down{
         transition: 0.5s;
         opacity: 0;
     }
-    .nav-bar.active ul{
+
+    .nav-bar.active ul {
         opacity: 1;
-        
+
     }
-    .nav-bar ul li a{
+
+    .nav-bar ul li a {
         margin-bottom: 2px;
     }
 
-    #floatingbtn{
+    #floatingbtn {
         display: initial;
         width: 4rem;
         height: 4rem;
@@ -753,31 +882,34 @@ footer .content .down{
 
 
 
-    .subjects{
+    .subjects {
         height: 200vh;
     }
 
 
-    .learners{
+    .learners {
         /* height: 250vh; */
     }
-    .learners .content .right h2{
+
+    .learners .content .right h2 {
         font-size: 1.2rem;
     }
-    .learners .content .right h4{
+
+    .learners .content .right h4 {
         font-size: 0.7rem;
     }
 
-    .community .content{
+    .community .content {
         gap: 10px;
         width: 600px;
         padding: 0;
     }
 
-    .box:nth-of-type(even){
+    .box:nth-of-type(even) {
         transform: translateX(-400%);
     }
-    .box.show{
+
+    .box.show {
         transform: translateX(0);
     }
 
@@ -787,73 +919,82 @@ footer .content .down{
 
 @media only screen and (max-width: 700px) {
 
-    h1{
+    h1 {
         font-size: 2rem;
         line-height: 40px;
     }
-    h5{
+
+    h5 {
         font-size: 0.8rem;
         letter-spacing: 1px;
         line-height: 25px;
     }
-    .btn{
+
+    .btn {
         font-size: 0.8rem;
         font-weight: 600;
     }
-     .courses{
-            height: 150vh;
-        }
-        .courses .content .down .box:nth-child(1){
-            display: none;
-        }
-        .courses .content .down .box:nth-child(2){
-            display: none;
-        }
+
+    .courses {
+        height: 150vh;
+    }
+
+    .courses .content .down .box:nth-child(1) {
+        display: none;
+    }
+
+    .courses .content .down .box:nth-child(2) {
+        display: none;
+    }
 
 
-        .subjects{
-            height: 200vh;
-        }
-
-
-
-        .learners{
-            height: 120vh;
-        }
-        .learners .content{
-            display: grid;
-            gap: 40px;
-            padding: 0 40px 0 40px;
-            text-align: center;
-
-        }
-        .learners .content .left{
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-
-        .goals .content{
-            display: grid;
-        }
+    .subjects {
+        height: 200vh;
+    }
 
 
 
-        footer{
-            height: 180vh;
-        }
-        footer .content .up .right{
-            display: grid;
-            gap: 20px;
-        }
+    .learners {
+        height: 120vh;
+    }
+
+    .learners .content {
+        display: grid;
+        gap: 40px;
+        padding: 0 40px 0 40px;
+        text-align: center;
+
+    }
+
+    .learners .content .left {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .goals .content {
+        display: grid;
+    }
+
+
+
+    footer {
+        height: 180vh;
+    }
+
+    footer .content .up .right {
+        display: grid;
+        gap: 20px;
+    }
 }
 
 
 @media only screen and (max-width: 600px) {
-    body{
+    body {
         overflow-x: hidden;
     }
-    .home .content{
+
+    .home .content {
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -862,19 +1003,22 @@ footer .content .down{
         width: 370px;
         padding: 0;
     }
-    .home .content a{
+
+    .home .content a {
         margin-left: auto;
         margin-right: auto;
     }
-    .subjects{
+
+    .subjects {
         height: 300vh;
     }
+
     .community {
         height: 180vh;
     }
 
 
-    footer{
+    footer {
         height: 240vh;
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,11 @@
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    .nav-bar ul li a.active {
+        color: #01C38D;
+    }
+</style>
 
 <body>
 
@@ -21,7 +27,8 @@
             <div class="logo">Courses</div>
 
             <div class="left">
-                <div id="darkmode" style="width: 30px; height: 30px; border: 1px solid #01C38D; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+                <div id="darkmode"
+                    style="width: 30px; height: 30px; border: 1px solid #01C38D; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
                     <span id="themeIcon">
                         <i class="ri-moon-line"></i>
                     </span>
@@ -40,14 +47,14 @@
                     <li><a href="./courses.html" class="">Courses</a></li>
                     <li><a href="./about.html" class="">About</a></li>
                     <li><a href="./blog.html" class="">Blog</a></li>
-                    <li><a href="./contact.html" class="">Contact</a></li>
+                    <li><a href="./contact.html" class="active">Contact</a></li>
                     <div class="acc">
                         <a href="#" class="btn">Join</a>
                         <a href="#" class="btn">Log In</a>
                     </div>
                 </ul>
             </nav>
-        
+
         </header>
 
 
@@ -61,8 +68,9 @@
                     </div>
                 </div>
                 <div>
-                    <a href="#" id="floatingbtn" class="slideinright"><box-icon type='solid' name='chevrons-up' class="bi" size="30px"></box-icon></a>
-            </div>
+                    <a href="#" id="floatingbtn" class="slideinright" style="display: flex; "><i class="ri-arrow-up-line"
+                            style="font-size: 2rem;"></i></a>
+                </div>
             </div>
         </section>
 
@@ -71,7 +79,7 @@
 
         <div class="get-in-touch">
             <div class="content">
-            <div class="left-side animate">
+                <div class="left-side animate">
                     <h1>Get in Touch</h1>
                     <div class="down">
                         <input type="text" placeholder="Enter Message">
@@ -80,11 +88,11 @@
                         <input type="text" placeholder="Enter Subjects">
                         <a href="#">SEND</a>
                     </div>
-            </div>
+                </div>
 
 
 
-            <div class="right-side animate">
+                <div class="right-side animate">
                     <div class="post">
                         <img src="./image/3e8ab32dd9b32ca4ef727dce1b72e30b.webp" alt="">
                         <div class="text">
@@ -119,7 +127,7 @@
                 <div class="up">
                     <div class="left">
                         <h3 class="green">Courses</h3>
-                        <p>The automated process starts  as soon as your cloths go in the machine.</p>
+                        <p>The automated process starts as soon as your cloths go in the machine.</p>
 
                         <div class="social-media">
                             <div></div>
@@ -159,7 +167,8 @@
                 </div>
 
                 <div class="down">
-                    <h5>Copyright ©2024 All rights reserved | This template is made with  by <span class="green">MuhammadCodes</span></h5>
+                    <h5>Copyright ©2024 All rights reserved | This template is made with by <span
+                            class="green">MuhammadCodes</span></h5>
                 </div>
             </div>
         </footer>
@@ -167,4 +176,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
