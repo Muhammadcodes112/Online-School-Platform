@@ -267,7 +267,7 @@ header.fixed {
     height: 100px;
 }
 
-#floatingbtn {
+#floatingbtn i {
     display: none
 }
 
